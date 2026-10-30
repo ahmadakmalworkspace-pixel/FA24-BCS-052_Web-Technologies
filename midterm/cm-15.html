@@ -33,17 +33,25 @@
   <main class="container mt-4">
     <a href="index.html">← back to store</a>
 
-    <div class="row mt-3">
+    <div class="product-layout mt-3">
 
-      <div class="col-12 col-md-6 mb-4">
+      <div class="product-image">
         <img src="images/cm-15.webp" class="big-img" alt="CM–15 black">
       </div>
 
-      <div class="col-12 col-md-6">
+      <div class="product-details">
         <h1>CM–15 black</h1>
         <p class="price fs-3">$80</p>
-        <p>A microphone for recording voice and instruments.</p>
+        <div class="mb-3">
+          <label for="qty" class="form-label">Quantity</label>
+          <input type="number" id="qty" class="form-control w-25" value="1" min="1">
+        </div>
+        <button class="btn btn-warning btn-lg">Add to Cart</button>
+      </div>
 
+      <div class="product-description">
+        <h2 class="fs-5">Description</h2>
+        <p>A microphone for recording voice and instruments.</p>
         <h2 class="fs-5">Details</h2>
         <ul>
           <li>Microphone for voice and instruments</li>
@@ -51,12 +59,6 @@
           <li>Write your own detail here</li>
           <li>Write your own detail here</li>
         </ul>
-
-        <div class="mb-3">
-          <label for="qty" class="form-label">Quantity</label>
-          <input type="number" id="qty" class="form-control w-25" value="1" min="1">
-        </div>
-        <button class="btn btn-warning btn-lg">Add to Cart</button>
       </div>
 
     </div>

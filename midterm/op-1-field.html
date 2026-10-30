@@ -33,17 +33,25 @@
   <main class="container mt-4">
     <a href="index.html">← back to store</a>
 
-    <div class="row mt-3">
+    <div class="product-layout mt-3">
 
-      <div class="col-12 col-md-6 mb-4">
+      <div class="product-image">
         <img src="images/op-1-field.webp" class="big-img" alt="OP–1 field">
       </div>
 
-      <div class="col-12 col-md-6">
+      <div class="product-details">
         <h1>OP–1 field</h1>
         <p class="price fs-3">$80</p>
-        <p>A portable synthesizer, sampler and sequencer with a built-in tape recorder and FM radio.</p>
+        <div class="mb-3">
+          <label for="qty" class="form-label">Quantity</label>
+          <input type="number" id="qty" class="form-control w-25" value="1" min="1">
+        </div>
+        <button class="btn btn-warning btn-lg">Add to Cart</button>
+      </div>
 
+      <div class="product-description">
+        <h2 class="fs-5">Description</h2>
+        <p>A portable synthesizer, sampler and sequencer with a built-in tape recorder and FM radio.</p>
         <h2 class="fs-5">Details</h2>
         <ul>
           <li>Synthesizer, sampler and sequencer in one</li>
@@ -51,12 +59,6 @@
           <li>Built-in FM radio</li>
           <li>Write your own detail here</li>
         </ul>
-
-        <div class="mb-3">
-          <label for="qty" class="form-label">Quantity</label>
-          <input type="number" id="qty" class="form-control w-25" value="1" min="1">
-        </div>
-        <button class="btn btn-warning btn-lg">Add to Cart</button>
       </div>
 
     </div>

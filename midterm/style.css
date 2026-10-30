@@ -13,6 +13,7 @@ body {
 }
 
 .big-img {
+  width: 100%;
   max-width: 100%;
   background-color: #e9e9e9;
   padding: 10px;
@@ -78,3 +79,42 @@ main:has(#cat-recording:checked) .product:not([data-category="recording"]) {
   display: none;
 }
 
+.product-layout {
+  display: grid;
+  grid-template-areas:
+    "image"
+    "details"
+    "description";
+  gap: 20px;
+}
+
+.product-image {
+  grid-area: image;
+}
+
+.product-details {
+  grid-area: details;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.product-description {
+  grid-area: description;
+}
+
+@media (min-width: 652px) {
+  .product-layout {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image details"
+      "description description";
+    align-items: start;
+  }
+
+  .product-details {
+    position: sticky;
+    top: 82px;
+  }
+}

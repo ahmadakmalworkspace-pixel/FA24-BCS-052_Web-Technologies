@@ -33,17 +33,25 @@
   <main class="container mt-4">
     <a href="index.html">← back to store</a>
 
-    <div class="row mt-3">
+    <div class="product-layout mt-3">
 
-      <div class="col-12 col-md-6 mb-4">
+      <div class="product-image">
         <img src="images/po-33.webp" class="big-img" alt="PO-33 K.O!">
       </div>
 
-      <div class="col-12 col-md-6">
+      <div class="product-details">
         <h1>PO-33 K.O!</h1>
         <p class="price fs-3">$59</p>
-        <p>A pocket-sized sampler and sequencer. Record sounds, chop them up and build beats.</p>
+        <div class="mb-3">
+          <label for="qty" class="form-label">Quantity</label>
+          <input type="number" id="qty" class="form-control w-25" value="1" min="1">
+        </div>
+        <button class="btn btn-warning btn-lg">Add to Cart</button>
+      </div>
 
+      <div class="product-description">
+        <h2 class="fs-5">Description</h2>
+        <p>A pocket-sized sampler and sequencer. Record sounds, chop them up and build beats.</p>
         <h2 class="fs-5">Details</h2>
         <ul>
           <li>Pocket operator: small and battery powered</li>
@@ -51,12 +59,6 @@
           <li>Write your own detail here</li>
           <li>Write your own detail here</li>
         </ul>
-
-        <div class="mb-3">
-          <label for="qty" class="form-label">Quantity</label>
-          <input type="number" id="qty" class="form-control w-25" value="1" min="1">
-        </div>
-        <button class="btn btn-warning btn-lg">Add to Cart</button>
       </div>
 
     </div>
