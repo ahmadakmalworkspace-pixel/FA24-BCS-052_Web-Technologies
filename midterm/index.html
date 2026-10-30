@@ -56,14 +56,25 @@
       <label for="cat-recording">Recording</label>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    <div class="row g-2 mb-4">
+      <div class="col-12 col-md-6">
+        <input type="text" id="search" class="form-control" placeholder="Search products">
+      </div>
+      <div class="col-12 col-md-auto">
+        <button type="button" id="sort-btn" class="btn btn-dark">Sort by price</button>
+      </div>
+    </div>
+
+    <p id="no-results" class="alert alert-warning d-none">No products found</p>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="product-grid">
 
       <div class="col product" data-category="samplers">
         <div class="card h-100 text-center">
-          <a href="product.html"><img src="images/ep-133.webp" class="card-img-top product-img" alt="EP–133 K.O. II"></a>
+          <a href="product.html"><img src="images/ep-133.webp" class="card-img-top product-img" alt="EP-133 K.O. II"></a>
           <div class="card-body">
-            <h5 class="card-title"><a href="product.html" class="text-dark text-decoration-none">EP–133 K.O. II</a></h5>
-            <p class="price">$30</p>
+            <h5 class="card-title"><a href="product.html" class="text-dark text-decoration-none">EP-133 K.O. II</a></h5>
+            <p class="price">Rs. 4500</p>
             <button class="btn btn-warning">Add to Cart</button>
           </div>
         </div>
@@ -71,10 +82,10 @@
 
       <div class="col product" data-category="synths">
         <div class="card h-100 text-center">
-          <a href="op-xy.html"><img src="images/op-xy.webp" class="card-img-top product-img" alt="OP–XY"></a>
+          <a href="op-xy.html"><img src="images/op-xy.webp" class="card-img-top product-img" alt="OP-XY"></a>
           <div class="card-body">
-            <h5 class="card-title"><a href="op-xy.html" class="text-dark text-decoration-none">OP–XY</a></h5>
-            <p class="price">$45</p>
+            <h5 class="card-title"><a href="op-xy.html" class="text-dark text-decoration-none">OP-XY</a></h5>
+            <p class="price">Rs. 7500</p>
             <button class="btn btn-warning">Add to Cart</button>
           </div>
         </div>
@@ -82,10 +93,10 @@
 
       <div class="col product" data-category="synths">
         <div class="card h-100 text-center">
-          <a href="op-1-field.html"><img src="images/op-1-field.webp" class="card-img-top product-img" alt="OP–1 field"></a>
+          <a href="op-1-field.html"><img src="images/op-1-field.webp" class="card-img-top product-img" alt="OP-1 field"></a>
           <div class="card-body">
-            <h5 class="card-title"><a href="op-1-field.html" class="text-dark text-decoration-none">OP–1 field</a></h5>
-            <p class="price">$80</p>
+            <h5 class="card-title"><a href="op-1-field.html" class="text-dark text-decoration-none">OP-1 field</a></h5>
+            <p class="price">Rs. 9800</p>
             <button class="btn btn-warning">Add to Cart</button>
           </div>
         </div>
@@ -93,10 +104,10 @@
 
       <div class="col product" data-category="recording">
         <div class="card h-100 text-center">
-          <a href="tp-7.html"><img src="images/tp-7.webp" class="card-img-top product-img" alt="TP–7 black"></a>
+          <a href="tp-7.html"><img src="images/tp-7.webp" class="card-img-top product-img" alt="TP-7 black"></a>
           <div class="card-body">
-            <h5 class="card-title"><a href="tp-7.html" class="text-dark text-decoration-none">TP–7 black</a></h5>
-            <p class="price">$25</p>
+            <h5 class="card-title"><a href="tp-7.html" class="text-dark text-decoration-none">TP-7 black</a></h5>
+            <p class="price">Rs. 3500</p>
             <button class="btn btn-warning">Add to Cart</button>
           </div>
         </div>
@@ -107,7 +118,7 @@
           <a href="po-33.html"><img src="images/po-33.webp" class="card-img-top product-img" alt="PO-33 K.O!"></a>
           <div class="card-body">
             <h5 class="card-title"><a href="po-33.html" class="text-dark text-decoration-none">PO-33 K.O!</a></h5>
-            <p class="price">$59</p>
+            <p class="price">Rs. 2500</p>
             <button class="btn btn-warning">Add to Cart</button>
           </div>
         </div>
@@ -115,10 +126,10 @@
 
       <div class="col product" data-category="speakers">
         <div class="card h-100 text-center">
-          <a href="ob-4.html"><img src="images/ob-4.webp" class="card-img-top product-img" alt="OB–4 black"></a>
+          <a href="ob-4.html"><img src="images/ob-4.webp" class="card-img-top product-img" alt="OB-4 black"></a>
           <div class="card-body">
-            <h5 class="card-title"><a href="ob-4.html" class="text-dark text-decoration-none">OB–4 black</a></h5>
-            <p class="price">$99</p>
+            <h5 class="card-title"><a href="ob-4.html" class="text-dark text-decoration-none">OB-4 black</a></h5>
+            <p class="price">Rs. 5900</p>
             <button class="btn btn-warning">Add to Cart</button>
           </div>
         </div>
@@ -126,10 +137,10 @@
 
       <div class="col product" data-category="speakers">
         <div class="card h-100 text-center">
-          <a href="m-1.html"><img src="images/m-1.webp" class="card-img-top product-img" alt="M–1 personal monitor"></a>
+          <a href="m-1.html"><img src="images/m-1.webp" class="card-img-top product-img" alt="M-1 personal monitor"></a>
           <div class="card-body">
-            <h5 class="card-title"><a href="m-1.html" class="text-dark text-decoration-none">M–1 personal monitor</a></h5>
-            <p class="price">$60</p>
+            <h5 class="card-title"><a href="m-1.html" class="text-dark text-decoration-none">M-1 personal monitor</a></h5>
+            <p class="price">Rs. 4800</p>
             <button class="btn btn-warning">Add to Cart</button>
           </div>
         </div>
@@ -137,10 +148,10 @@
 
       <div class="col product" data-category="recording">
         <div class="card h-100 text-center">
-          <a href="cm-15.html"><img src="images/cm-15.webp" class="card-img-top product-img" alt="CM–15 black"></a>
+          <a href="cm-15.html"><img src="images/cm-15.webp" class="card-img-top product-img" alt="CM-15 black"></a>
           <div class="card-body">
-            <h5 class="card-title"><a href="cm-15.html" class="text-dark text-decoration-none">CM–15 black</a></h5>
-            <p class="price">$80</p>
+            <h5 class="card-title"><a href="cm-15.html" class="text-dark text-decoration-none">CM-15 black</a></h5>
+            <p class="price">Rs. 3900</p>
             <button class="btn btn-warning">Add to Cart</button>
           </div>
         </div>
@@ -155,5 +166,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
