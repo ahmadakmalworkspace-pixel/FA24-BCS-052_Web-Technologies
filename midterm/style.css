@@ -42,3 +42,39 @@ footer {
   width: 180px;
   max-width: 60%;
 }
+
+.filters {
+  position: relative;
+}
+
+.filters input {
+  position: absolute;
+  opacity: 0;
+}
+
+.filters label {
+  display: inline-block;
+  padding: 8px 18px;
+  margin: 0 8px 8px 0;
+  border: 2px solid hsl(4, 70%, 45%);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filters input:checked + label {
+  background-color: hsl(4, 70%, 45%);
+  color: white;
+}
+
+.filters input:focus-visible + label {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+
+main:has(#cat-samplers:checked) .product:not([data-category="samplers"]),
+main:has(#cat-synths:checked) .product:not([data-category="synths"]),
+main:has(#cat-speakers:checked) .product:not([data-category="speakers"]),
+main:has(#cat-recording:checked) .product:not([data-category="recording"]) {
+  display: none;
+}
+

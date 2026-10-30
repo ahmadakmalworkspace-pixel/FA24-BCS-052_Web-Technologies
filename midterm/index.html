@@ -43,9 +43,22 @@
   <main class="container mt-4" id="products">
     <h2 class="mb-4">All products</h2>
 
+    <div class="filters mb-3">
+      <input type="radio" name="category" id="cat-all" value="all" checked>
+      <label for="cat-all">All</label>
+      <input type="radio" name="category" id="cat-samplers" value="samplers">
+      <label for="cat-samplers">Samplers</label>
+      <input type="radio" name="category" id="cat-synths" value="synths">
+      <label for="cat-synths">Synths</label>
+      <input type="radio" name="category" id="cat-speakers" value="speakers">
+      <label for="cat-speakers">Speakers</label>
+      <input type="radio" name="category" id="cat-recording" value="recording">
+      <label for="cat-recording">Recording</label>
+    </div>
+
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
 
-      <div class="col">
+      <div class="col product" data-category="samplers">
         <div class="card h-100 text-center">
           <a href="product.html"><img src="images/ep-133.webp" class="card-img-top product-img" alt="EP–133 K.O. II"></a>
           <div class="card-body">
@@ -56,7 +69,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col product" data-category="synths">
         <div class="card h-100 text-center">
           <a href="op-xy.html"><img src="images/op-xy.webp" class="card-img-top product-img" alt="OP–XY"></a>
           <div class="card-body">
@@ -67,7 +80,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col product" data-category="synths">
         <div class="card h-100 text-center">
           <a href="op-1-field.html"><img src="images/op-1-field.webp" class="card-img-top product-img" alt="OP–1 field"></a>
           <div class="card-body">
@@ -78,7 +91,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col product" data-category="recording">
         <div class="card h-100 text-center">
           <a href="tp-7.html"><img src="images/tp-7.webp" class="card-img-top product-img" alt="TP–7 black"></a>
           <div class="card-body">
@@ -89,7 +102,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col product" data-category="samplers">
         <div class="card h-100 text-center">
           <a href="po-33.html"><img src="images/po-33.webp" class="card-img-top product-img" alt="PO-33 K.O!"></a>
           <div class="card-body">
@@ -100,7 +113,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col product" data-category="speakers">
         <div class="card h-100 text-center">
           <a href="ob-4.html"><img src="images/ob-4.webp" class="card-img-top product-img" alt="OB–4 black"></a>
           <div class="card-body">
@@ -111,7 +124,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col product" data-category="speakers">
         <div class="card h-100 text-center">
           <a href="m-1.html"><img src="images/m-1.webp" class="card-img-top product-img" alt="M–1 personal monitor"></a>
           <div class="card-body">
@@ -122,7 +135,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col product" data-category="recording">
         <div class="card h-100 text-center">
           <a href="cm-15.html"><img src="images/cm-15.webp" class="card-img-top product-img" alt="CM–15 black"></a>
           <div class="card-body">
