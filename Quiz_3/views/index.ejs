@@ -1,0 +1,51 @@
+<section class="hero text-white text-center">
+  <div class="container">
+    <img src="/images/logo.png" alt="teenage engineering" class="hero-logo mb-4">
+    <h1 class="display-5">high quality, well designed electronic gadgets</h1>
+    <p class="lead">for all techies</p>
+    <a href="#products" class="btn btn-warning btn-lg">Shop now</a>
+  </div>
+</section>
+
+<main class="container mt-4" id="products">
+  <h2 class="mb-4">All products</h2>
+
+  <div class="filters mb-3">
+    <input type="radio" name="category" id="cat-all" value="all" checked>
+    <label for="cat-all">All</label>
+    <input type="radio" name="category" id="cat-samplers" value="samplers">
+    <label for="cat-samplers">Samplers</label>
+    <input type="radio" name="category" id="cat-synths" value="synths">
+    <label for="cat-synths">Synths</label>
+    <input type="radio" name="category" id="cat-speakers" value="speakers">
+    <label for="cat-speakers">Speakers</label>
+    <input type="radio" name="category" id="cat-recording" value="recording">
+    <label for="cat-recording">Recording</label>
+  </div>
+
+  <div class="row g-2 mb-4">
+    <div class="col-12 col-md-6">
+      <input type="text" id="search" class="form-control" placeholder="Search products">
+    </div>
+    <div class="col-12 col-md-auto">
+      <button type="button" id="sort-btn" class="btn btn-dark">Sort by price</button>
+    </div>
+  </div>
+
+  <p id="no-results" class="alert alert-warning d-none">No products found</p>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="product-grid">
+    <% products.forEach(function (p) { %>
+      <div class="col product" data-category="<%= p.category %>">
+        <div class="card h-100 text-center">
+          <a href="/products/<%= p.slug %>"><img src="/images/<%= p.image %>" class="card-img-top product-img" alt="<%= p.name %>"></a>
+          <div class="card-body">
+            <h5 class="card-title"><a href="/products/<%= p.slug %>" class="text-dark text-decoration-none"><%= p.name %></a></h5>
+            <p class="price">Rs. <%= p.price %></p>
+            <button class="btn btn-warning">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+</main>
